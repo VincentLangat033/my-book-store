@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
     # route to test your configuration
     get '/hello', to: 'application#hello_world'
+    get '/home' , to: 'application#home'
 
     get '*path',
       to: 'fallback#index',
